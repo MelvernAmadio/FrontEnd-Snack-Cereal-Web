@@ -1,0 +1,155 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('kellogs2.webp') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(211, 47, 47, 1); 
+    color: white;
+    padding: 50px;
+    width: 100%;
+}
+
+footer{
+    background-color: rgba(211, 47, 47, 1); 
+    color: white;
+    padding: 50px;
+    width: 100%;
+    font-family:  'Pacifico', cursive;
+    font-size: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 50;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid white;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 60px 20px;
+    font-size: 50px;
+    font-family:  'Pacifico', cursive;
+    text-shadow: 
+    -3px -3px 0 black,  
+    3px -3px 0 black,
+   -3px  3px 0 black,
+    3px  3px 0 black,
+   -5px -5px 0 black,  
+    5px -5px 0 black,
+   -5px  5px 0 black,
+    5px  5px 0 black; 
+    
+}
+
+.banner-text {
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+main {
+    background: none;
+    padding: 60px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 100px; /* Menambahkan margin bawah sebesar 40px */
+}
+
+.card {
+    background-color: rgba(211, 47, 47, 1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 80px;
+    padding: 20px;
+    width: 1000px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card2 {
+    background-color: rgba(211, 47, 47, 1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 80px;
+    padding: 20px;
+    width: 1000px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-family:  'Pacifico', cursive;
+    margin: 15px 0;
+    color: white;
+}
+
+.card2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card2 p {
+    font-family:  'Pacifico', cursive;
+    font-size: 30px;
+    margin-top: 100px;
+    color: white;
+}
+
+.card2 p2 {
+    font-family:  'Pacifico', cursive;
+    font-size: 20px;
+    margin-top: 100px;
+    color: white;
+}

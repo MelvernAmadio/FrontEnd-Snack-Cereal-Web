@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us!</h1>
+    </header>
+    <main>
+        <div class="contact-container">
+            <form action="thankyou.html" method="post">
+                <p>Please fill this form before giving a question!</p>
+                <div class="name-fields">
+                    <div class="first-name">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="last-name">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                </div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number (please insert number only!) </label>
+                <input type="number" id="phone" name="phone" required>
+                <p>Question Type
+                    <select name='questions' required>
+                      <option value='Products'>Products</option>
+                      <option value='Nutrition'>Nutrition</option>
+                      <option value='Sponsorships'>Sponsorships</option>
+                      <option value='Prices'>Prices</option>
+                    </select>
+                    </p>
+                <label for="questions">Questions</label>
+                <textarea id="questions" name="questions" rows="4" required></textarea>
+                <div class="buttons">
+                    <button type="button" onclick="window.location.href='home.html'" class="left-button">Return to Home</button>
+                    <div class="right-buttons">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </div>
+            </form>
+            <img src="Tony_The_Tiger.webp" alt="Tiger" class="tiger-img">
+        </div>
+    </main>
+    <script src="contact.js"></script>
+</body>
+</html>
